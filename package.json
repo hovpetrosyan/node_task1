@@ -1,0 +1,17 @@
+{
+  "name": "node_task",
+  "version": "1.0.0",
+  "description": "''\u001b[Dtask 1 from node.js'",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "author": "hp",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "moment": "^2.22.2",
+    "stream": "0.0.2"
+  }
+}
