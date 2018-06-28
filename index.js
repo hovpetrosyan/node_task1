@@ -14,8 +14,11 @@ const rs = new Readable({
 const ws = new Writable({
 	write(chunk,enc,callback){
 		console.log(chunk.toString());
-		fs.appendFile('data.txt',(chunk.toString() + '\r\n'));
-		callback();
+		fs.appendFile('data.txt',(chunk.toString() + '\r\n'),function (err) {
+  		if (err) throw err;
+  			console.log('Saved!');
+  			callback();
+		});
 	}
 });
 const tr = new Transform({
